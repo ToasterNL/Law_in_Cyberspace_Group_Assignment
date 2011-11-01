@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{a4wide, graphicx, fancyhdr, wrapfig, tabularx, amsmath, amssymb, hyperref, color, verbatim}
+\usepackage[english]{babel}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%----------------------- Macros and Definitions --------------------------
+
+\setlength\headheight{20pt}\usepackage{}
+\addtolength\topmargin{-10pt}
+%\addtolength\footskip{20pt}
+
+\fancypagestyle{plain}{%
+\fancyhf{}
+\fancyfoot[RO,LE]{\sffamily\bfseries\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[RO,LE]{\sffamily\bfseries\thepage}
+\fancyhead[RO,LE]{\textsc{team Pooh Bear}}
+\fancyhead[LO,RE]{\emph{Setup description}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\tab}{\hspace*{2em}}
+
+\frenchspacing
+
+%-------------------------------- Title ----------------------------------
+
+\title{\textbf{Law in Cyberspace\\ \emph{Behavioural Advertising}}}
+%\author{
+%	Robbert van den Berg\thanks{\href{mailto:r.v.d.berg@student.tue.nl}{r.v.d.berg@student.tue.nl}}
+%	\and Hugo Ideler\thanks{\href{mailto:h.a.w.ideler@student.tue.nl}{h.a.w.ideler@student.tue.nl}}
+%	\and Bert Tilmans\thanks{\href{mailto:h.j.tilmans@student.tue.nl}{h.j.tilmans@student.tue.nl}}
+%	\and Niels de Vreede\thanks{\href{mailto:n.d.vreede@student.tue.nl}{n.d.vreede@student.tue.nl}}
+%}
+\author{
+	H.J. Tilmans
+	\and M. Vijfvinkel
+	\and Y. Zeng
+	\and
+	\href{mailto:h.j.tilmans@student.tue.nl}{h.j.tilmans}@student.tue.nl,\\
+	\{\href{mailto:m.vijfvinkel@student.ru.nl}{m.vijfvinkel},
+	\href{mailto:y.zeg@student.ru.nl}{y.zeng}\}@student.ru.nl
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+\section{blah}
+Cool citation \cite{test}
+\subsection{bloh}
+\subsubsection{bleh}
+
+\section{Conclusion}
+
+%%% REFS %%%
+
+\bibliographystyle{plain} % amsalpha
+\bibliography{assignment2}
+
+\end{document}
