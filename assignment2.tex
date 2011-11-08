@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage{a4wide, graphicx, fancyhdr, wrapfig, tabularx, amsmath, amssymb, hyperref, color, verbatim}
+\usepackage{a4wide, graphicx, fancyhdr, wrapfig, tabularx, amsmath, amssymb, hyperref, color, verbatim, nameref}
 \usepackage[english]{babel}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
@@ -26,6 +26,7 @@
 \renewcommand{\footrulewidth}{0pt}
 \newcommand{\tab}{\hspace*{2em}}
 
+\newcommand{\tocheck}[1]{{\bf !?: #1 :!?}}
 \frenchspacing
 
 %-------------------------------- Title ----------------------------------
@@ -45,11 +46,26 @@
 \begin{document}
 \maketitle
 \section{Introduction}
+The online advertising market topped a record revenue of 26 billion US Dollar over the year 2010. \cite{IAB2011}
+That given, it is not surprising that the advertising business is constantly looking for methods to improve ad responses and thus revenue.
+Nowadays, online behavioural advertising - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'.
+Moreover, what exactly does the advertising world know about you?
 
-\section{blah}
-Cool citation \cite{test}
-\subsection{bloh}
-\subsubsection{bleh}
+In the next section, a short overview is given on the techniques used for online behavioural advertising. In section~\nameref{legal violations}, the privacy violations \tocheck{and data protection violations} are defined. Then the current applicable laws from the EU and the European Convention of Human Rights are stated, followed by the section~\nameref{memorandum} in which advises to the courts, legislators and industries are given.
+\section{Online Behavioural Advertising Techniques}
+\label{techniques}
+
+\section{The Legal Violations}
+\label{legal violations}
+
+\section{Applicable Laws}
+\label{applicable laws}
+
+\section{Memorandum}
+\label{memorandum}
+\subsection{To The Courts}
+\subsection{To The Legislators}
+\subsection{To The Industry}
 
 \section{Conclusion}
 
