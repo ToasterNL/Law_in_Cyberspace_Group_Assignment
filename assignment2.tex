@@ -27,6 +27,9 @@
 \newcommand{\tab}{\hspace*{2em}}
 
 \newcommand{\tocheck}[1]{{\bf !?: #1 :!?}}
+\newcommand{\OBA}{Online behavioural advertising }
+\newcommand{\oba}{online behavioural advertising }
+
 \frenchspacing
 
 %-------------------------------- Title ----------------------------------
@@ -48,24 +51,64 @@
 \section{Introduction}
 The online advertising market topped a record revenue of 26 billion US Dollar over the year 2010. \cite{IAB2011}
 That given, it is not surprising that the advertising business is constantly looking for methods to improve ad responses and thus revenue.
-Nowadays, online behavioural advertising - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'.
+Nowadays, \oba - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'.
 Moreover, what exactly does the advertising world know about you?
 
-In the next section, a short overview is given on the techniques used for online behavioural advertising. In section~\nameref{legal violations}, the privacy violations \tocheck{and data protection violations} are defined. Then the current applicable laws from the EU and the European Convention of Human Rights are stated, followed by the section~\nameref{memorandum} in which advises to the courts, legislators and industries are given.
-\section{Online Behavioural Advertising Techniques}
+In the next section, the terminology used in this \tocheck{paper} is explained. Then, in section~\nameref{techniques}, a short overview is given on the techniques used for \oba. In section~\nameref{legal implications}, the privacy violations \tocheck{and data protection violations} are defined. Then the current applicable laws from the EU and the European Convention of Human Rights are stated, followed by the section~\nameref{memorandum} in which advises to the courts, legislators and industries are given.
+
+\section{Terminology}
+\label{terminology}
+Basically, in an \oba system, the following four main participating entities can be distinguished:
+
+\begin{itemize}
+	\item Ad network\\
+			The ad network makes money by charging the advertisers who would like to use the big advertising infrastructure of the ad networks (e.g. Google's Adsense). With the use of online behavioural tracking, the ad networks can deliver ads to online users more accurately.
+
+	\item Advertiser\\
+			The advertisers use ad networks for spreading their ads more efficiently. Meaning, when using ad networks, the advertiser's ads most likely will be shown to interested users more than to uninterested users, which clearly should result in more revenue for the advertisers.
+
+	\item Ad publisher\\
+			The ad publisher shows the targeted ads to the online users through their website. In return for the used online web-space, the ad publisher receives money per click/view.
+
+	\item Online user\\
+			Browsing through the behavioural advertising supported websites, the user will receive more interesting, thus less annoying advertisements. Furthermore, thanks to the financial support of the \oba to publishers, the user can enjoy many more free online services, e.g. Google Mail. 
+\end{itemize}
+
+Clearly, everyone benefits from this \oba system.
+When the ad networks use better tracking techniques, they will be able to target the ads better, which will have more users view/click on interesting ads and thus having the ad publishers earning more money, as well as the advertisers who will have more potential buyers on their website.
+So, which techniques are used?
+
+\section{\OBA techniques}
 \label{techniques}
+Online behavioural advertising completely relies on the creation of accurate user profile(s) by the ad networks. Whenever a user profile is incomplete or incorrect, the user will receive ads which he may not like. To avoid this, ad networks use, inter alia, the following techniques.
 
-\section{The Legal Violations}
-\label{legal violations}
+\begin{itemize}
+	\item Cookies\\
+		A cookie is a piece of text received from the web server - when a user is visiting a website - and is saved on his computer by the web browser. Aside from a unique user identifier, site preferences, authentication information, session identifiers and more can be stored in this cookie as well. So, whenever visiting the same website again, this cookie is sent to the website again which will adjust the content of the website according to your preferences and profile. Google Adsense, for example, stores a cookie with a unique number in order to be able to track you when visiting ad publisher's websites (which could be connected to Google Adsense's network). \cite{Adsense2011}
 
-\section{Applicable Laws}
+	\item Web Bugs\\
+		A web bug usually is a small, seemingly invisible, part of a web page or non-plain text e-mail, which allows the ad network to track who has viewed the web page or e-mail. This web bug is downloaded from the ad networks server every time the web page or e-mail is opened, so the ad networks know when and what you opened. Possibly, JavaScript is used to extract even more information from you to ensure the ad networks use the right profile. For this technique, no cookies are required.
+
+	\item Web browser fingerprinting\\
+		A web browser fingerprint is the collection of all information about the browser version, operating system it runs on, installed plug-ins and their version numbers and more. In a publication of the Electronic Frontier Foundation (EFF), a web browser can already be uniquely identifiable among over 500,000 (privacy conscious) users. \cite{EFF2010} Like with the web bugs, the web browser fingerprinting does not require client-side storage. But, not all information can be extracted from the web browser without the use of JavaScript.
+
+	\item Keystroke statistical analysis\\
+		When knowing keystroke speeds of a user, one could identify a user according to their 'keystroke profile'. This technique is based on the fact that each user has a unique keystroke \tocheck{speed}. Google may be using the technique already, since whenever you have \textit{Google Instant} activated, Google receives every character you type in the search box separately. \cite{GoogleInstant} This technique requires JavaScript. 
+\end{itemize}
+
+As can be seen, lots of information can be gathered using these techniques. But, what privacy implications do these techniques introduce? Is it allowed to create digital profiles of users, without the user knowing? The legal implications and violations will be discussed in the next section.
+
+\section{The legal implications}
+\label{legal implications}
+
+\section{Applicable laws}
 \label{applicable laws}
 
 \section{Memorandum}
 \label{memorandum}
-\subsection{To The Courts}
-\subsection{To The Legislators}
-\subsection{To The Industry}
+\subsection{To the courts}
+\subsection{To the legislators}
+\subsection{To the industry}
 
 \section{Conclusion}
 
