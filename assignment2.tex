@@ -36,7 +36,7 @@
 
 %-------------------------------- Title ----------------------------------
 
-\title{\textbf{Law in Cyberspace\\ \emph{Behavioural Advertising}}}
+\title{\textbf{Law in Cyberspace\\ \emph{Web Analytics and Online Personalisation}}}
 \author{
 	H.J. Tilmans
 	\and M. Vijfvinkel
@@ -56,13 +56,14 @@
 The online advertising market topped a record revenue of 26 billion US Dollar over the year 2010. \cite{IAB2011}
 That given, it is not surprising that the advertising business is constantly looking for methods to improve ad responses and thus revenue.
 
-Nowadays, \oba - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'.
+Nowadays, \oba - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'. \tocheck{Why clearly?, Misschien moet hier wat nog uitbreiding/verduidelijking bij?}
 
-What implications does this have for that users? Moreover, what exactly does the advertising world know about you?
+But what implications does this have for the user? Moreover, what exactly does the advertising world know about you?
 
 \section{Terminology}
 \label{terminology}
-Basically, in an \oba system, the following four main participating entities can be distinguished:
+First we will provide some terminology and explain how an \oba system work.
+In a typical \oba system the following four participating entities can be distinguished:
 
 \begin{itemize}
 	\item Ad network\\
@@ -79,42 +80,22 @@ Basically, in an \oba system, the following four main participating entities can
 \end{itemize}
 
 Clearly, everyone benefits from this \oba system.
-When the ad networks use better tracking techniques, they will be able to target the ads better, which will have more users view/click on interesting ads and thus having the ad publishers earning more money, as well as the advertisers who will have more potential buyers on their website.
+When the ad networks use better tracking techniques, they will be able to target the ads better, which will have more users view or click on interesting ads and thus having the ad publishers earning more money, as well as the advertisers who will have more potential buyers on their website.
 So, which techniques are used to accomplish this?
 
-\section{Legal issues}
-"Set out the basic legal questions that you will answer."
-Since the effectiveness of \oba strongly depends on harvesting personal user information, the following legal issues are introduced:\\
-
-\begin{itemize}
-	\item \textit{Is the OBA industry allowed to gather the personal information the way they do nowadays?}\\
-	\item \textit{Is the OBA industry allowed to use the personal information the way they do nowaways}\\
-	\item \textit{Is the OBA industry unlawfully discriminating users based on their profile?}\\
-%	\item \textit{}\\
-%	\item \textit{}\\
-\end{itemize}
-
-\section{Summary}
-\begin{itemize}
-	\item \textit{Is the OBA industry allowed to gather the personal information the way they do currently?}\\
-			brief summary (5-10 lines)
-	\item \textit{Is the OBA industry allowed to use the personal information the way they do currently}\\
-			brief summary (5-10 lines)
-	\item \textit{Is the OBA industry unlawfully discriminating users based on their profile?}\\
-			brief summary (5-10 lines)
-\end{itemize}
-
 \section{Facts}
+In this section we will describe which techniques are used in \OBA market and which European legislation applies.
+
 \subsection{\OBA tracking techniques}
 \label{techniques}
 Online behavioural advertising completely relies on the creation of accurate user profile(s) by the ad networks. Whenever a user profile is incomplete or incorrect, the user will receive ads which he may not like. To avoid this, ad networks use, inter alia, the following techniques.
 
 \begin{itemize}
 	\item Cookies\\
-		A cookie is a piece of text received from the web server - when a user is visiting a website - and is saved on his computer by the web browser. Aside from a unique user identifier, site preferences, authentication information, session identifiers and more can be stored in this cookie as well. So, whenever visiting the same website again, this cookie is sent to the website again which will adjust the content of the website according to your preferences and profile. Google Adsense, for example, stores a cookie with a unique number in order to be able to track you when visiting ad publisher's websites (which could be connected to Google Adsense's network). \cite{Adsense2011}
+		A cookie is a piece of text received from the web server - when a user is visiting a website - and is saved on his computer by the web browser. Aside from a unique user identifier, site preferences, authentication information, session identifiers, more information can be stored in this cookie as well. Whenever the user is visiting the same website again, this cookie is sent to the website which will adjust the content of the website according to your preferences and profile. Google Adsense, for example, stores a cookie with a unique number in order to be able to track you when visiting ad publisher's websites (which could be connected to Google Adsense's network). \cite{Adsense2011}
 
 	\item Web Bugs\\
-		A web bug usually is a small, seemingly invisible, part of a web page or non-plain text e-mail, which allows the ad network to track who has viewed the web page or e-mail. This web bug is downloaded from the ad networks server every time the web page or e-mail is opened, so the ad networks know when and what you opened. Possibly, JavaScript is used to extract even more information from you to ensure the ad networks use the right profile. For this technique, no cookies are required.
+		A web bug is usually a small, seemingly invisible, part of a web page or non-plain text e-mail, which allows the ad network to track who has viewed the web page or e-mail. This web bug is downloaded from the ad networks server every time the web page or e-mail is opened, so the ad networks know when and what you opened. Possibly, JavaScript is used to extract even more information from you to ensure the ad networks use the right profile.\tocheck{MIsschien overbodig? Of er moet wat bij over hoe Javascript dat zou doen?} For this technique, no cookies are required. \tocheck{bron erbij?}
 
 	\item Web browser fingerprinting\\
 		A web browser fingerprint is the collection of all information about the browser version, operating system it runs on, installed plug-ins and their version numbers and more. In a publication of the Electronic Frontier Foundation (EFF), a web browser can already be uniquely identifiable among over 500,000 (privacy conscious) users. \cite{EFF2010} Like with the web bugs, the web browser fingerprinting does not require client-side storage. But, not all information can be extracted from the web browser without the use of JavaScript.
@@ -125,10 +106,13 @@ Online behavioural advertising completely relies on the creation of accurate use
 
 As can be seen, lots of information can be gathered using these techniques. But, what privacy implications do these techniques introduce? Is it allowed to create digital profiles of users, without the user knowing? The legal implications and violations will be discussed in the next section.
 
-\subsection{OBA policies}
+%\subsection{OBA policies}
+%<Mark>: Ik neem aan dat je hier de policies van Google Adsense of Facebook bedoeld? Misschien is dat wat overbodig omdat hier te quoten en kunnen we het beter weglaten en misschien her en der in de tekst naar verwijzen. Als je iets totaal anders bedoeld...wat bedoel je dan precies?
 
-\subsection{Applicable laws}
-To determine if the privacy of users is being violated, we first determined which European legislation applies to this problem and below we describe which articles of that leglislation apply.
+\subsection{Applicable European legislation}
+Since we describe this problem from a European point of view \tocheck{misschien hierboven nog ergens vermelden}, we also have to look at the European legislation that deals with this problem. Below we will quote relevant articles from the \ePD, the European Convention of Human Rights and the \DPD. \tocheck{Als we de cookie directive gaan gebruiken moeten we die ook vermelden denk ik}
+
+%http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:337:0011:0036:En:PDF     cookie directive, staat als het goed is ook op git/resources
 
 \subsubsection{\ePD 2002/58/EC}
 
@@ -156,7 +140,7 @@ Out of the \ePD we use the following articles:
 
 \subsubsection{Legal implications of \ePD}
 
-The articles mentioned above do not show all the subarticles, but show the main points related to this problem. The \ePD shows that if electronic communication services and public communications networks want to process personal data, they have to ask prior consent from the user to do so. The \ePD also shows that unsolicited communications used for direct marketing needs to have prior consent of users or national legislation has to make sure that the users wishes not to receive the communication are respected.
+The articles mentioned above do not show all the subarticles, but show the main points related to this problem. The \ePD shows that if electronic communication services and public communications networks want to process personal data, they have to ask prior consent from the user to do so. The \ePD also shows that unsolicited communications used for direct marketing needs to have prior consent of users, or national legislation has to make sure that the users wishes not to receive the communication, are respected.
 
 \subsubsection{European Convention of Human Rights}
 \begin{itemize}
@@ -174,8 +158,8 @@ The articles mentioned above do not show all the subarticles, but show the main 
 
 
 \subsubsection{Legal implications of European Convention of Human Rights}
-As becomes clear from \textit{article 8}, everyone's privacy has to be respected, unless if that person is a legal risk factor. This is - sort of - regulated through clear consent that a user has to give before privacy related information may be gathered.
-However, it is impossible for everyone to check whether or not he is being discriminated. For example, the OBA mechanism could discriminate user $x$ and $y$ by returning different pricing to both the users, bases on their online spending behaviour. When user $x$ generally is willing to pay more than €100 for a watch, he may receive higher pricing for sunglasses than user $y$, who, for example, generally is not willing to pay more than €50 for watches. This sounds extreme, but who can tell if these techniques are not already the case?
+As becomes clear from \textit{article 8}, everyone's privacy has to be respected, unless if that person is a legal risk factor. This is - sort of - regulated through clear consent that a user has to give, before privacy related information may be gathered.
+However, it is impossible for everyone to check whether or not he is being discriminated. For example, the OBA mechanism could discriminate user $x$ and $y$ by returning different pricing to both the users, based on their online spending behaviour. When user $x$ generally is willing to pay more than €100 for a watch, he may receive higher pricing for sunglasses than user $y$, who, for example, is not willing to pay more than €50 for watches. This sounds extreme, but who can tell if these techniques are not already is use?
 
 \subsubsection{\DPD 95/46/EC}
 \begin{itemize}
@@ -209,11 +193,40 @@ However, it is impossible for everyone to check whether or not he is being discr
 \end{itemize}
 
 \subsubsection{Legal implications of the \DPD}
-The \DPD clearly state that the user has to unambiguously give his consent before his personal data may be processed, and explicit consent is needed when it comes to information described in \textit{article 8.2a}. A user also has the right to object to processing of personal data if they are being used for direct marketing, even by third parties.
+The \DPD clearly state that the user has to unambiguously give his consent before his personal data may be processed, and explicit consent is needed when it comes to information described in \textit{article 8.1}. A user also has the right to object to processing of personal data if they are being used for direct marketing, even by third parties.
 
 \subsection{Conclusion legal implications}
 
 We can conclude from the above mentioned directives that the gathering and processing of user data is not allowed, unless the user gives his clear consent. This results in legal friction when we look at the current techniques used in behavioural advertising as mentioned in the introduction. For the average user, it is difficult to determine if data is being collected via these techniques in first place. We will discuss this in the next chapter with a case study regarding the social networking site Facebook.
+
+
+
+
+
+
+\section{Legal issues}
+"Set out the basic legal questions that you will answer."
+Since the effectiveness of \oba strongly depends on harvesting personal user information, the following legal issues are introduced:\\
+
+\begin{itemize}
+	\item \textit{Is the OBA industry allowed to gather the personal information the way they do nowadays?}\\
+	\item \textit{Is the OBA industry allowed to use the personal information the way they do nowaways}\\
+	\item \textit{Is the OBA industry unlawfully discriminating users based on their profile?}\\
+%	\item \textit{}\\
+%	\item \textit{}\\
+\end{itemize}
+
+\section{Summary}
+\begin{itemize}
+	\item \textit{Is the OBA industry allowed to gather the personal information the way they do currently?}\\
+			brief summary (5-10 lines)
+	\item \textit{Is the OBA industry allowed to use the personal information the way they do currently}\\
+			brief summary (5-10 lines)
+	\item \textit{Is the OBA industry unlawfully discriminating users based on their profile?}\\
+			brief summary (5-10 lines)
+\end{itemize}
+
+
 
 
 
