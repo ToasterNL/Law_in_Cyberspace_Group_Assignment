@@ -56,9 +56,10 @@
 The online advertising market topped a record revenue of 26 billion US Dollar over the year 2010. \cite{IAB2011}
 That given, it is not surprising that the advertising business is constantly looking for methods to improve ad responses and thus revenue.
 
-Nowadays, \oba - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because the delivered ads are chosen from a large database (containing advertisers' ads) according to the digital profile that is created for each online user. Clearly, that profile may not correspond with the real user's 'profile'. \tocheck{Why clearly?, Misschien moet hier wat nog uitbreiding/verduidelijking bij?}
+Nowadays, \oba - a technique that tracks online user's behaviour - is the main method used for delivering advertisements to each user's individual estimated interest. Estimated, because based on the traced user's online activities, an algorithm will create/update the corresponding user profile. Unfortunately, wrong conclusions may be taken by the algorithm, which may lead to having a user profile that does not correspond to the user's real 'profile'.
 
-But what implications does this have for the user? Moreover, what exactly does the advertising world know about you?
+But what implications does this have for a user? Moreover, what exactly does the advertising world know about you?
+Note that in this memorandum the focus will be on European legislation.
 
 \section{Terminology}
 \label{terminology}
@@ -95,13 +96,13 @@ Online behavioural advertising completely relies on the creation of accurate use
 		A cookie is a piece of text received from the web server - when a user is visiting a website - and is saved on his computer by the web browser. Aside from a unique user identifier, site preferences, authentication information, session identifiers, more information can be stored in this cookie as well. Whenever the user is visiting the same website again, this cookie is sent to the website which will adjust the content of the website according to your preferences and profile. Google Adsense, for example, stores a cookie with a unique number in order to be able to track you when visiting ad publisher's websites (which could be connected to Google Adsense's network). \cite{Adsense2011}
 
 	\item Web Bugs\\
-		A web bug is usually a small, seemingly invisible, part of a web page or non-plain text e-mail, which allows the ad network to track who has viewed the web page or e-mail. This web bug is downloaded from the ad networks server every time the web page or e-mail is opened, so the ad networks know when and what you opened. Possibly, JavaScript is used to extract even more information from you to ensure the ad networks use the right profile.\tocheck{MIsschien overbodig? Of er moet wat bij over hoe Javascript dat zou doen?} For this technique, no cookies are required. \tocheck{bron erbij?}
+		A web bug is usually a small, seemingly invisible, part of a web page or non-plain text e-mail, which allows the ad network to track who has viewed the web page or e-mail. This web bug is downloaded from the ad networks server every time the web page or e-mail is opened, so the ad networks know when and what you opened. Possibly, JavaScript is used to extract even more information from you- e.g. by sniffing browser history - to ensure the ad networks use the right profile. As this technique can completely run on only JavaScript, no cookies are required.
 
 	\item Web browser fingerprinting\\
 		A web browser fingerprint is the collection of all information about the browser version, operating system it runs on, installed plug-ins and their version numbers and more. In a publication of the Electronic Frontier Foundation (EFF), a web browser can already be uniquely identifiable among over 500,000 (privacy conscious) users. \cite{EFF2010} Like with the web bugs, the web browser fingerprinting does not require client-side storage. But, not all information can be extracted from the web browser without the use of JavaScript.
 
 	\item Keystroke statistical analysis\\
-		When knowing keystroke speeds of a user, one could identify a user according to their 'keystroke profile'. This technique is based on the fact that each user has a unique keystroke \tocheck{speed}. Google may be using the technique already, since whenever you have \textit{Google Instant} activated, Google receives every character you type in the search box separately. \cite{GoogleInstant} This technique requires JavaScript. 
+		When knowing keystroke speeds or intervals of a user, one could identify a user according to their 'keystroke profile'. This technique is based on the fact that each user has a so-called unique keystroke 'fingerprint'. Google may be using the technique already, since whenever you have \textit{Google Instant} \cite{GoogleInstant} activated, Google receives every character you type in the search box separately. This technique requires JavaScript. 
 \end{itemize}
 
 As can be seen, lots of information can be gathered using these techniques. But, what privacy implications do these techniques introduce? Is it allowed to create digital profiles of users, without the user knowing? The legal implications and violations will be discussed in the next section.
@@ -110,7 +111,7 @@ As can be seen, lots of information can be gathered using these techniques. But,
 %<Mark>: Ik neem aan dat je hier de policies van Google Adsense of Facebook bedoeld? Misschien is dat wat overbodig omdat hier te quoten en kunnen we het beter weglaten en misschien her en der in de tekst naar verwijzen. Als je iets totaal anders bedoeld...wat bedoel je dan precies?
 
 \subsection{Applicable European legislation}
-Since we describe this problem from a European point of view \tocheck{misschien hierboven nog ergens vermelden}, we also have to look at the European legislation that deals with this problem. Below we will quote relevant articles from the \ePD, the European Convention of Human Rights and the \DPD. \tocheck{Als we de cookie directive gaan gebruiken moeten we die ook vermelden denk ik}
+Since we describe this problem from a European point of view, we also have to look at the European legislation that deals with this problem. Below we will quote relevant articles from the \ePD, the European Convention of Human Rights and the \DPD and the European Cookie Directive \cite{cookielaw}.
 \tocheck{Hier kan het stuk van Sherry, betreffende de wetten!}
 
 %http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:337:0011:0036:En:PDF     cookie directive, staat als het goed is ook op git/resources
@@ -202,7 +203,7 @@ We can conclude from the above mentioned directives that the gathering and proce
 
 
 \section{Legal issues according case studies}
-In order to explain the legal issues we will first introduce some questions about the legality of \oba industry. These questions will be anwsered using a case that is in progress, Europe versus Facebook and \tocheck{misschien iets over google adsense en de cases van Sherry}.
+In order to explain the legal issues we will first introduce some questions about the legality of \oba industry. These questions will be answered using a case that is in progress, Europe versus Facebook and \tocheck{misschien iets over google adsense en de cases van Sherry}.
 
 \subsection{Legal issues unanwsered}
 \label{sec: legal questions}
@@ -274,9 +275,9 @@ were faced with your facts, given the pertinent law.
 "
 \begin{itemize}
 	\item \textit{Is the OBA industry allowed to gather the personal information the way they do currently?}\\
-			Whenever the OBA businesses comply with the cookie law \cite{blabla} \tocheck{citation}, they are legally allowed to gather the personal information. Nevertheless, as we have discussed, cookies are just one of the many tracking techniques. Since the other tracking techniques are not encapsulated by the current cookie law, the OBA industry is not legally prohibited to (surreptitiously) track users using those techniques. 
+			Whenever the OBA businesses comply with the cookie law \cite{cookielaw}, they are legally allowed to gather the personal information. Nevertheless, as we have discussed, cookies are just one of the many tracking techniques. Since the other tracking techniques are not encapsulated by the current cookie law, the OBA industry is not legally prohibited to (surreptitiously) track users using those techniques. 
 
-			As Google is the most used search engine \tocheck{citation nodig of obvious?}, they have a vast establishment on which they can apply other tracking techniques than cookies. One example would be the statistical analysis of user's keystroke when they enter the search keywords in Google. This analysis on its own can already uniquely identify a single online user \cite{keystroke}, which leaves out the need to having cookies.
+			As Google is the most used search engine - Google has \textit{global rank 1} \cite{googlerank1} on the well-established website \texttt{alexa.com} - they have a vast establishment on which they can apply other tracking techniques than cookies. One example would be the statistical analysis of user's keystroke when they enter the search keywords in Google. This analysis on its own can already uniquely identify a single online user \cite{keystroke}, which leaves out the need to having cookies.
 
 			So, because we can not check if the OBA industry is using those 'rogue' techniques currently, laws should be created and enforced to help users to protect against this.
 
